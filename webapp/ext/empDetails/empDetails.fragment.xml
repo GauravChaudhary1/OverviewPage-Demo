@@ -1,0 +1,14 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:ovp="sap.ovp.ui"
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1">
+	<Carousel pages="{/empDetailsSet}">
+		<pages>
+			<VBox class="sapOvpCarouselContentHeader">
+				<Title text="{name}" level="H5"></Title>
+				<Title text="{id}" level="H5"></Title>
+				<Title text="{department}" level="H5"></Title>
+				<Title text="{division}" level="H5"></Title>
+				<Image src="../img/person.svg" alt="Image"></Image>
+			</VBox>
+		</pages>
+	</Carousel>
+</core:FragmentDefinition>

@@ -1,0 +1,15 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:u="sap.ui.unified">
+	<VBox class="sapOvpCardHeader sapOvpCardHeaderBorder sapUiContentPadding ">
+		<HBox>
+			<FlexBox class="ovpHeaderContainer">
+				<Text id="card02Original--ovpHeaderTitle" class="sapOvpCardTitle"/>
+			</FlexBox>
+			<FlexBox class="sapOvpHeaderCountMainDiv">
+				<Text id="card02Original--ovpHeaderCount" class="sapOvpHeaderCounter"></Text>
+			</FlexBox>
+		</HBox>
+		<FlexBox class="ovpHeaderContainer">
+			<Text id="card02Original--SubTitle-Text" class="sapOvpCardSubtitle"/>
+		</FlexBox>
+	</VBox>
+</core:FragmentDefinition>

@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:ovp="sap.ovp.ui"
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1">
+	<List id="approvals--cardOriginal" items="{/pendingTasksSet}">
+		<items>
+			<StandardListItem title="{department}" description="{descr}" info="{path: 'records', formatter: '.formatCounts'}" infoState="Error"
+				type="Navigation" press=".handlePress(${url})" class="removePadding"></StandardListItem>
+		</items>
+	</List>
+</core:FragmentDefinition>
