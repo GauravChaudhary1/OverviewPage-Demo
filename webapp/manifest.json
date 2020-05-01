@@ -85,7 +85,7 @@
 				"settings": {
 					"title": "{{card01_title}}",
 					"subTitle": "{{card01_subTitle}}",
-					"maxrows": 5,
+					"maxrows": 15,
 					"defaultSpan": {
 						"rows": 20,
 						"cols": 2

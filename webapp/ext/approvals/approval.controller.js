@@ -24,8 +24,17 @@
 			this.byId("card02Original--ovpHeaderTitle").setText(this.oComponentData.settings.title);
 			this.byId("card02Original--SubTitle-Text").setText(this.oComponentData.settings.subTitle);
 			var that = this;
-			var text = that.maxRows + " of " + 8;
-			this.byId("card02Original--ovpHeaderCount").setText(text);
+			// 			var text = that.maxRows + " of " + 8;
+			// 			this.byId("card02Original--ovpHeaderCount").setText(text);
+			this.oModel.read("/pendingTasksSet/$count", {
+				async: true,
+				success: function (oData, response) {
+					if (Number(response.body) > this.maxRows) {
+						var text = that.maxRows + " of " + response.body;
+						this.byId("card02Original--ovpHeaderCount").setText(text);
+					}
+				}.bind(this)
+			});
 		},
 		formatCounts: function (records) {
 			var record = records + " Waiting Approvals";

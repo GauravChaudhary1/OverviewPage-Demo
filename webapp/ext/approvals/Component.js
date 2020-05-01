@@ -24,7 +24,7 @@ sap.ui.define(["sap/ovp/cards/custom/Component"], function (Component) {
 
 			library: "sap.ovp",
 
-			includes: ["../css/styles.css"],
+			includes: ["../css/style.css"],
 
 			dependencies: {
 				libs: ["sap.m"],
